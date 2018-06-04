@@ -64,6 +64,11 @@ module.exports = {
   appPublic: resolveApp('public'),
   appHtml: resolveApp('public/index.html'),
   appIndexJs: resolveModule(resolveApp, 'src/index'),
+  popupHtml: resolveApp('popup/popup.html'),
+  silentRenewHtml: resolveApp('silent_renew/silent_renew.html'),
+  appIndexJs: resolveApp('src/index.js'),
+  appPopupJs: resolveApp('popup/index.js'),
+  appSilentRenewJs: resolveApp('silent_renew/index.js'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   appTsConfig: resolveApp('tsconfig.json'),
@@ -85,7 +90,15 @@ module.exports = {
   appBuild: resolveApp('build'),
   appPublic: resolveApp('public'),
   appHtml: resolveApp('public/index.html'),
+<<<<<<< HEAD
   appIndexJs: resolveModule(resolveApp, 'src/index'),
+=======
+  popupHtml: resolveApp('popup/popup.html'),
+  silentRenewHtml: resolveApp('silent_renew/silent_renew.html'),
+  appIndexJs: resolveApp('src/index.js'),
+  appPopupJs: resolveApp('popup/index.js'),
+  appSilentRenewJs: resolveApp('silent_renew/index.js'),
+>>>>>>> Oidc react app template
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   appTsConfig: resolveApp('tsconfig.json'),
@@ -118,9 +131,19 @@ if (
     dotenv: resolveOwn(`${templatePath}/.env`),
     appPath: resolveApp('.'),
     appBuild: resolveOwn('../../build'),
+<<<<<<< HEAD
     appPublic: resolveOwn(`${templatePath}/public`),
     appHtml: resolveOwn(`${templatePath}/public/index.html`),
     appIndexJs: resolveModule(resolveOwn, `${templatePath}/src/index`),
+=======
+    appPublic: resolveOwn('template/public'),
+    appHtml: resolveOwn('template/public/index.html'),
+    popupHtml: resolveApp('template/popup/popup.html'),
+    silentRenewHtml: resolveApp('template/silent_renew/silent_renew.html'),
+    appIndexJs: resolveOwn('template/src/index.js'),
+    appPopupJs: resolveApp('template/popup/index.js'),
+    appSilentRenewJs: resolveApp('template/silent_renew/index.js'),
+>>>>>>> Oidc react app template
     appPackageJson: resolveOwn('package.json'),
     appSrc: resolveOwn(`${templatePath}/src`),
     appTsConfig: resolveOwn(`${templatePath}/tsconfig.json`),
