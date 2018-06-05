@@ -90,15 +90,12 @@ module.exports = {
   appBuild: resolveApp('build'),
   appPublic: resolveApp('public'),
   appHtml: resolveApp('public/index.html'),
-<<<<<<< HEAD
   appIndexJs: resolveModule(resolveApp, 'src/index'),
-=======
-  popupHtml: resolveApp('popup/popup.html'),
-  silentRenewHtml: resolveApp('silent_renew/silent_renew.html'),
+  popupHtml: resolveApp('src/oidc/popup/popup.html'),
+  silentRenewHtml: resolveApp('src/oidc/silent_renew/silent_renew.html'),
   appIndexJs: resolveApp('src/index.js'),
-  appPopupJs: resolveApp('popup/index.js'),
-  appSilentRenewJs: resolveApp('silent_renew/index.js'),
->>>>>>> Oidc react app template
+  appPopupJs: resolveApp('src/oidc/popup/index.js'),
+  appSilentRenewJs: resolveApp('src/oidc/silent_renew/index.js'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
   appTsConfig: resolveApp('tsconfig.json'),
@@ -138,12 +135,19 @@ if (
 =======
     appPublic: resolveOwn('template/public'),
     appHtml: resolveOwn('template/public/index.html'),
-    popupHtml: resolveApp('template/popup/popup.html'),
-    silentRenewHtml: resolveApp('template/silent_renew/silent_renew.html'),
+    popupHtml: resolveApp('template/src/oidc/popup/popup.html'),
+    silentRenewHtml: resolveApp(
+      'template/src/oidc/silent_renew/silent_renew.html'
+    ),
     appIndexJs: resolveOwn('template/src/index.js'),
+<<<<<<< HEAD
     appPopupJs: resolveApp('template/popup/index.js'),
     appSilentRenewJs: resolveApp('template/silent_renew/index.js'),
 >>>>>>> Oidc react app template
+=======
+    appPopupJs: resolveApp('template/src/oidc/popup/index.js'),
+    appSilentRenewJs: resolveApp('template/src/oidc/silent_renew/index.js'),
+>>>>>>> Restructure template and add user manager
     appPackageJson: resolveOwn('package.json'),
     appSrc: resolveOwn(`${templatePath}/src`),
     appTsConfig: resolveOwn(`${templatePath}/tsconfig.json`),
