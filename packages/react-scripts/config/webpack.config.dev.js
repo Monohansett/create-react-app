@@ -180,6 +180,19 @@ module.exports = {
               cacheDirectory: true,
             },
           },
+          {
+            test: /\.less$/,
+            loader: ExtractTextPlugin.extract({
+              fallback: require.resolve('style-loader'),
+              use: [
+                {
+                  loader: require.resolve('css-loader'),
+                  options: { minimize: true },
+                },
+                require.resolve('less-loader'),
+              ],
+            }),
+          },
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
           // "style" loader turns CSS into JS modules that inject <style> tags.
