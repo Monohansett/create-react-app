@@ -1,13 +1,13 @@
 import { createUserManager } from 'redux-oidc';
 
 const userManagerConfig = {
-  client_id: 'id', //Add real client id here
+  client_id: process.env.REACT_APP_CLIENT_ID,
   redirect_uri: `${window.location.protocol}//${window.location.hostname}${
     window.location.port ? `:${window.location.port}` : ''
   }/callback`,
   response_type: 'token id_token',
-  scope: 'scope', //Add scopes for your client
-  authority: 'http://identity_server_url/', //Add real Identity Server URL here,
+  scope: process.env.REACT_APP_SCOPE,
+  authority: process.env.REACT_APP_AUTHORITY_URL,
   silent_redirect_uri: `${window.location.protocol}//${
     window.location.hostname
   }${window.location.port ? `:${window.location.port}` : ''}/silent_renew.html`,
