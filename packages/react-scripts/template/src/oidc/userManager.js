@@ -4,7 +4,7 @@ const userManagerConfig = {
   client_id: process.env.REACT_APP_CLIENT_ID,
   redirect_uri: `${window.location.protocol}//${window.location.hostname}${
     window.location.port ? `:${window.location.port}` : ''
-  }/callback`,
+  }/oidc-callback`,
   response_type: 'token id_token',
   scope: process.env.REACT_APP_SCOPE,
   authority: process.env.REACT_APP_AUTHORITY_URL,
